@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hobbies — Aniket Chitre." />
+  <title>Hobbies — Aniket Chitre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Aniket Chitre</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"        class="nav__link">Home</a></li>
+        <li><a href="work.html"         class="nav__link">Work</a></li>
+        <li><a href="publications.html" class="nav__link">Publications</a></li>
+        <li><a href="hobbies.html"      class="nav__link nav__link--active">Hobbies</a></li>
+        <li><a href="cv.html"           class="nav__link">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-section container">
+      <p class="section-label">Hobbies</p>
+      <p style="max-width: 520px; line-height: var(--leading-relaxed); color: var(--color-muted); margin-bottom: var(--space-10);">
+        Outside of work, I will probably be found playing badminton, watching football or cricket,
+        or with my loved ones enjoying some great food. I love to travel and am grateful for the
+        cities I have got to live in (London, Boston, Cambridge, Singapore, Liverpool and counting).
+      </p>
+
+      <div class="collage" role="list" aria-label="Photo collage">
+        <div class="collage__item">
+          <img src="images/hobbies/IMG20250712135659.jpg"          alt="" loading="lazy" />
+        </div>
+        <div class="collage__item">
+          <img src="images/hobbies/IMG20250726165251.jpg"          alt="" loading="lazy" />
+        </div>
+        <div class="collage__item">
+          <img src="images/hobbies/IMG20251224164831.jpg"          alt="" loading="lazy" />
+        </div>
+        <div class="collage__item">
+          <img src="images/hobbies/IMG20250525110640~2.jpg"        alt="" loading="lazy" />
+        </div>
+        <div class="collage__item">
+          <img src="images/hobbies/IMG20260307120555.jpg"          alt="" loading="lazy" />
+        </div>
+        <div class="collage__item">
+          <img src="images/hobbies/IMG_20240514_213215_502.jpg"    alt="" loading="lazy" />
+        </div>
+        <div class="collage__item">
+          <img src="images/hobbies/PXL_20240825_152653994.jpg"     alt="" loading="lazy" />
+        </div>
+        <div class="collage__item">
+          <img src="images/hobbies/PXL_20250306_164342723.MP~2.jpg" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Aniket Chitre</p>
+      <nav class="footer__links" aria-label="Footer links">
+        <a href="https://www.linkedin.com/in/aniket-chitre/" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=DelMN4oAAAAJ&hl=en" class="footer__link" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="mailto:ac2349@cantab.ac.uk" class="footer__link">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links  = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('nav__links--open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
+</body>
+</html>
